@@ -1,0 +1,36 @@
+{
+  "name": "real_estate_api",
+  "version": "1.0.0",
+  "description": "real estate project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set DEBUG=info,errorLog,warning & nodemon --exec babel-node index.js"
+  },
+  "author": "mokbul",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "@babel/runtime": "^7.8.3",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "i18n-2": "^0.7.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.1",
+    "password-validator": "^5.0.3",
+    "pg": "^7.15.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "nodemon": "^2.0.2"
+  }
+}
