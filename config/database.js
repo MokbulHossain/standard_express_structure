@@ -1,7 +1,7 @@
 
 
 import Sequelize from 'sequelize'
-require('dotenv').config()
+import 'dotenv/config'
 
 //read veriable from .env file.......
 const  postgresIp = process.env.postgresIp
@@ -26,6 +26,6 @@ sequelize.authenticate()
     })
 
 
-module.exports.pg = sequelize;
+module.exports = sequelize;
 
 

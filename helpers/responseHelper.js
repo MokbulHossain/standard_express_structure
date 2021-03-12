@@ -23,6 +23,7 @@ module.exports = {
         };
 
     },
+    //401
     UNAUTHORIZED: ( message, req)=>{
 
         return {
@@ -30,6 +31,7 @@ module.exports = {
         };
 
     },
+    //404
      NOT_FOUND :(message, req)=>{
 
         return {
@@ -38,6 +40,7 @@ module.exports = {
 
     },
 
+    //422
      UNPROCESSABLE_ENTITY :( message, payload, req)=>{
 
         return {

@@ -1,5 +1,5 @@
 
-require('dotenv').config()
+import 'dotenv/config'
 import express from 'express';
 import debug from 'debug';
 import {readdir} from 'fs' ;
@@ -19,6 +19,7 @@ app.use(express.static(__dirname+'/public'));
 app.use(morgan('dev'));
 app.use(cors())
 
+import {Store} from './models'
 	
 //const auth = require("./router/auth")
 

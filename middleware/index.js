@@ -53,26 +53,6 @@ module.exports= {
 			return  res.status(400).send(BAD_REQUEST( req.i18n.__('unauthorized'), null, req))
 
 		}
-},
-	isSupperAdmin: (req,res,next) => {
-
-			const {user_info} = req
-		
-			   if(user_info.user_type != 0 ){
-				 return res.status(401).json({error:"You Have no Permission"})
-			   }
-			  next();
-		
-			},
-		
-
-/*	isSupplierOrOperationUser: (req,res,next) => {
-				 const {user_info} = req; console.log('user_info.user_type ',user_info.user_type)
-				   if(user_info.user_type != 5 && user_info.user_type != 6){
-					 return res.status(401).json({error:"You Have no Permission"})
-				   }
-				  next();
-		
-	},*/
+}
 
 }

@@ -1,14 +1,21 @@
-const Orders = require('../models/Orders');
-const OrderItem = require('../models/OrderItem');
-const Products = require('../models/Products');
-const StatusType = require('../models/StatusType');
-const Zone = require('../models/Zone');
+import CheckInLog from './checkinlog' 
+import CustomerOtp from './customer_otp'
+import CustomerAuthentication from './customerauthentication'
+import CustomerProfileTemp from './customerprofile_temp'
+import CustomerProfile from './customerprofile'
+import CustomerStoreMap from './customerstoremap'
+import CustomerSubUser from './customersubuser'
+import NotificationHistory from './notification_history'
+import NotificationTemplate from './notification_template'
+import StatusConfig from './statusconfig'
+import Store from './store'
 
 
-Orders.hasMany(OrderItem, {targetKey: 'order_id', foreignKey: 'order_id', as: 'Items'});
-OrderItem.belongsTo(StatusType, {targetKey: 'id',foreignKey: 'status_id',as:'status'});
-OrderItem.belongsTo(Products, {targetKey: 'product_id',foreignKey: 'product_id',as:'product'});
 
 
 
-module.exports = {OrderItem,Orders,Products,StatusType,Zone};
+
+
+module.exports = {CheckInLog,CustomerOtp,CustomerAuthentication,CustomerProfileTemp,CustomerProfile,
+                  CustomerStoreMap,CustomerSubUser,NotificationHistory,NotificationTemplate,
+                  StatusConfig, Store};
